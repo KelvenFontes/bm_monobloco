@@ -8,6 +8,7 @@ import Services from './components/Services'
 import Footer from '../components/Footer'
 import Image from 'next/image'
 import Hero from './components/Hero'
+import WhatsAppIcon from '@/components/WhatsAppIcon'
 
 const Home: NextPage = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -79,15 +80,15 @@ const Home: NextPage = () => {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Nossos Parceiros</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="flex justify-center items-center">
-                <Image src="/logo.png" alt="Oficina de Carros" width={200} height={50} />
+                <Image src="/chevrolet.jpg" alt="Oficina de Carros" width={200} height={50} />
                 {/* <img src={partner1} alt="Parceiro 1" className="max-h-24" /> */}
               </div>
               <div className="flex justify-center items-center">
-                <Image src="/logo.png" alt="Oficina de Carros" width={200} height={50} />
+                <Image src="/audi.jpeg" alt="Oficina de Carros" width={200} height={50} />
                 {/* <img src={partner2} alt="Parceiro 2" className="max-h-24" /> */}
               </div>
               <div className="flex justify-center items-center">
-                <Image src="/logo.png" alt="Oficina de Carros" width={200} height={50} />
+                <Image src="/volvo.png" alt="Oficina de Carros" width={200} height={50} />
                 {/* <img srck={partner3} alt="Parceiro 3" className="max-h-24" /> */}
               </div>
               {/* Adicione mais divs conforme necessário para mais parceiros */}
@@ -150,6 +151,7 @@ const Home: NextPage = () => {
           </div>
         </section>
       </main>
+      <WhatsAppIcon />
       <Footer />
     </div>
   )
