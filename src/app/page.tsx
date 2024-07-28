@@ -92,27 +92,7 @@ const Home: NextPage = () => {
 
         <Gallery />
 
-        {/* Seção: Parceiros */}
-        <section className="py-12 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Nossos Parceiros</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="flex justify-center items-center">
-                <Image src="/chevrolet.jpg" alt="Oficina de Carros" width={200} height={50} />
-                {/* <img src={partner1} alt="Parceiro 1" className="max-h-24" /> */}
-              </div>
-              <div className="flex justify-center items-center">
-                <Image src="/audi.jpeg" alt="Oficina de Carros" width={200} height={50} />
-                {/* <img src={partner2} alt="Parceiro 2" className="max-h-24" /> */}
-              </div>
-              <div className="flex justify-center items-center">
-                <Image src="/volvo.png" alt="Oficina de Carros" width={200} height={50} />
-                {/* <img srck={partner3} alt="Parceiro 3" className="max-h-24" /> */}
-              </div>
-              {/* Adicione mais divs conforme necessário para mais parceiros */}
-            </div>
-          </div>
-        </section>
+
 
         {/* Seção: Formulário de Contato */}
         <section className="py-12 bg-gray-100">
