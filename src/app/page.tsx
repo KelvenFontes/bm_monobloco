@@ -11,6 +11,11 @@ import Hero from './components/Hero'
 import WhatsAppIcon from '@/components/WhatsAppIcon'
 import Gallery from './components/Gallery'
 
+
+
+import { FaGoogle, FaMapMarkerAlt, FaWaze } from 'react-icons/fa';
+import { HiOutlineLocationMarker } from 'react-icons/hi';
+
 const Home: NextPage = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -77,7 +82,7 @@ const Home: NextPage = () => {
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Nossa Missão</h2>
             <p className="text-lg text-gray-700">
-            Promover serviços com mão de obra técnica profissional através de conhecimento sólido e dedicação. Procuramos a excelência na prestação de serviços com peças e mão de obra de primeira linha.
+              Promover serviços com mão de obra técnica profissional através de conhecimento sólido e dedicação. Procuramos a excelência na prestação de serviços com peças e mão de obra de primeira linha.
             </p>
           </div>
         </section>
@@ -134,28 +139,51 @@ const Home: NextPage = () => {
         </section>
 
         {/* Seção: Mapa de Localização */}
-        <section className="py-12">
+        <section className="py-12 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Nosso Endereço</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">Nosso Endereço</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <p className="text-gray-700">
+              {/* Informações do Local */}
+              <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col justify-center">
+                <h3 className="text-2xl font-semibold mb-4 flex items-center text-gray-900">
+                  <HiOutlineLocationMarker className="text-gray-900 mr-2" />
+                  Visite-nos
+                </h3>
+                <p className="text-gray-700 mb-4">
                   Avenida Presidente - Av. Pref. Hirant Sanazar, 442
                   <br />
                   Umuarama, Osasco - SP, 06030-095, Brazil
                 </p>
+                <div className="flex space-x-4">
+                  <a
+                    href="https://www.google.com/maps/dir/?api=1&destination=Av.+Pref.+Hirant+Sanazar%2C+442%2C+Umuarama%2C+Osasco+-+SP%2C+06030-095%2C+Brazil"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-green-600 text-white py-2 px-4 rounded-lg shadow-md hover:bg-green-700 transition-colors duration-300"
+                  >
+                    <FaGoogle className="mr-2" /> Ver no Google Maps
+                  </a>
+                  <a
+                    href="https://waze.com/ul?ll=-23.5374168,-46.7942078&navigate=yes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-blue-600 text-white py-2 px-4 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300"
+                  >
+                    <FaWaze size={20} className="mr-2" /> Ver no Waze
+                  </a>
+                </div>
               </div>
-              {/* Aqui você pode adicionar um mapa usando uma API de mapas, como Google Maps */}
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <div className="aspect-w-16 aspect-h-9">
+              {/* Mapa do Local */}
+              <div className="bg-white p-0 rounded-lg shadow-lg overflow-hidden">
+                <div className="relative w-full h-64">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.045048192675!2d-46.79420778540678!3d-23.53741688469045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef588b0de2e05%3A0x108ab4f938d29cf4!2sAv.%20Pref.%20Hirant%20Sanazar%2C%20442%20-%20Umuarama%2C%20Osasco%20-%20SP%2C%2006030-095!5e0!3m2!1sen!2sbr!4v1626372597644!5m2!1sen!2sbr"
-                    width="600"
-                    height="450"
+                    width="100%"
+                    height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
-                    className="w-full h-full rounded-lg"
+                    className="w-full h-full rounded-lg transform transition-transform duration-300 hover:scale-105"
                     title="Mapa de Localização"
                   ></iframe>
                 </div>
@@ -163,6 +191,8 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
+
+
       </main>
       <WhatsAppIcon />
       <Footer />
