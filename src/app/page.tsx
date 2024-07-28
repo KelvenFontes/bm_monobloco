@@ -9,6 +9,7 @@ import Footer from '../components/Footer'
 import Image from 'next/image'
 import Hero from './components/Hero'
 import WhatsAppIcon from '@/components/WhatsAppIcon'
+import Gallery from './components/Gallery'
 
 const Home: NextPage = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -46,7 +47,7 @@ const Home: NextPage = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1 }}
                 >
-                  Bem-vindo à nossa Oficina de Carros
+                  Bem vindo a Bm monobloco
                 </motion.h1>
                 <motion.p
                   className="mt-4 text-xl text-gray-700"
@@ -54,7 +55,7 @@ const Home: NextPage = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 0.5 }}
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero et ante blandit sagittis. Maecenas vestibulum tellus et lorem aliquet ultricies. Integer sit amet mauris id metus gravida rutrum. Vivamus gravida, libero id condimentum varius, quam sem luctus lorem, vitae commodo velit odio eu nibh. Integer aliquam odio sit amet libero fermentum venenatis.
+                  A Bm Monobloco nasceu em 2016, sempre com o pensamento e intuito de resolver problemas direito na geometria do veículo, não somos apenas uma oficina mecânica. Somos especialistas em Alinhamento técnico priorizando sempre uma melhor instabilidade aos veículos dos nossos clientes.
                 </motion.p>
               </div>
             </div>
@@ -71,8 +72,20 @@ const Home: NextPage = () => {
           </div>
         </section>
 
+        {/* Seção: Missão a Oficina */}
+        <section className="py-12 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Nossa Missão</h2>
+            <p className="text-lg text-gray-700">
+            Promover serviços com mão de obra técnica profissional através de conhecimento sólido e dedicação. Procuramos a excelência na prestação de serviços com peças e mão de obra de primeira linha.
+            </p>
+          </div>
+        </section>
+
         {/* Seção: Nossos Serviços */}
         <Services />
+
+        <Gallery />
 
         {/* Seção: Parceiros */}
         <section className="py-12 bg-white">

@@ -10,7 +10,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Bem-vindo à nossa Oficina de Carros
+          Bem-vindos à Bm Monobloco
         </motion.h1>
         <motion.p
           className="mt-4 text-xl text-center text-gray-700"
@@ -18,7 +18,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          Oferecemos os melhores serviços para o seu carro.
+          Especialista em Alinhamento Técnico e Auto Center
         </motion.p>
       </div>
     </section>
