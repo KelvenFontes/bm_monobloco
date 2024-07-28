@@ -1,5 +1,9 @@
-import { FaInstagram, FaYoutube, FaWhatsapp, FaFacebook, FaPhoneAlt, FaLocationArrow, FaEnvelope, FaPaypal, FaCreditCard } from 'react-icons/fa'
+import { FaInstagram, FaYoutube, FaWhatsapp, FaFacebook, FaPhoneAlt, FaLocationArrow, FaEnvelope } from 'react-icons/fa'
 import { IoMdTime } from 'react-icons/io'
+import { FaCcVisa, FaCcMastercard  } from 'react-icons/fa';
+import { FaMoneyBill1Wave } from "react-icons/fa6";
+
+import { FaPix } from "react-icons/fa6";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -35,21 +39,44 @@ const Footer = () => {
           {/* Horário de Funcionamento */}
           <div className="flex flex-col">
             <h3 className="text-xl font-semibold mb-2"><IoMdTime className="inline mr-2" />Horário de Funcionamento</h3>
-            <p>Segunda a Sexta: 08:00 - 18:00</p>
-            <p>Sábado: 08:00 - 12:00</p>
+            <p className='text-gray-400'>Segunda a Sexta: 08:00 - 18:00</p>
+            <p className='text-gray-400'>Sábado: 08:00 - 12:00</p>
           </div>
           {/* Endereço e Mapa */}
           <div className="flex flex-col">
             <h3 className="text-xl font-semibold mb-2"><FaLocationArrow className="inline mr-2" />Nosso Endereço</h3>
-            <p>Avenida Presidente - Av. Pref. Hirant Sanazar, 442</p>
-            <p>Umuarama, Osasco - SP, 06030-095, Brazil</p>
+            <p className='text-gray-400'>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Av.+Pref.+Hirant+Sanazar%2C+442%2C+Umuarama%2C+Osasco+-+SP%2C+06030-095%2C+Brazil"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gray-300 transition-colors duration-300"
+              >
+                Avenida Presidente - Av. Pref. Hirant Sanazar, 442<br />
+                Umuarama, Osasco - SP, 06030-095, Brazil
+              </a>
+            </p>
           </div>
           {/* Telefone e Email */}
           <div className="flex flex-col">
             <h3 className="text-xl font-semibold mb-2"><FaPhoneAlt className="inline mr-2" />Telefone</h3>
-            <p>(11) 3682-712245</p>
+            <p className='text-gray-400'>
+              <a
+                href="tel:+55113682712245"
+                className="hover:text-gray-300 transition-colors duration-300"
+              >
+                (11) 3682-7122
+              </a>
+            </p>
             <h3 className="text-xl font-semibold mt-4 mb-2"><FaEnvelope className="inline mr-2" />Email</h3>
-            <p>contato@bmmonobloco.com.br</p>
+            <p className='text-gray-400'>
+              <a
+                href="mailto:contato@bmmonobloco.com.br"
+                className="hover:text-gray-300 transition-colors duration-300"
+              >
+                contato@bmmonobloco.com.br
+              </a>
+            </p>
           </div>
         </div>
         {/* Formulário de Assinatura de Newsletter */}
@@ -62,8 +89,10 @@ const Footer = () => {
         </div> */}
         {/* Métodos de Pagamento */}
         <div className="flex space-x-4 mb-8">
-          <FaPaypal size="2em" className="text-gray-400 hover:text-gray-300 transition-colors duration-300" />
-          <FaCreditCard size="2em" className="text-gray-400 hover:text-gray-300 transition-colors duration-300" />
+          <FaCcVisa size="2em" className="text-gray-400 hover:text-gray-300 transition-colors duration-300" />
+          <FaCcMastercard size="2em" className="text-gray-400 hover:text-gray-300 transition-colors duration-300" />
+          <FaPix size="2em" className="text-gray-400 hover:text-gray-300 transition-colors duration-300" />
+          <FaMoneyBill1Wave size="2em" className="text-gray-400 hover:text-gray-300 transition-colors duration-300" />
         </div>
       </div>
       {/* Seção de Copyright */}
