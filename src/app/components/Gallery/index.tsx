@@ -34,9 +34,6 @@ const images = [
   '/img29.jpg',
   '/img30.jpg',
   '/img31.jpg',
-  '/img32.jpg',
-  '/img33.jpg',
-  '/img34.jpg',
 ];
 
 const Gallery: React.FC = () => {
