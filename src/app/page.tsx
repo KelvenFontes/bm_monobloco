@@ -52,7 +52,7 @@ const Home: NextPage = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1 }}
                 >
-                  Bem vindo a Bm monobloco
+                  Bm monobloco
                 </motion.h1>
                 <motion.p
                   className="mt-4 text-xl text-gray-700"
@@ -67,24 +67,22 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        {/* Seção: Sobre a Oficina */}
-        <section className="py-12 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Sobre Nossa Oficina</h2>
-            <p className="text-lg text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero et ante blandit sagittis. Maecenas vestibulum tellus et lorem aliquet ultricies. Integer sit amet mauris id metus gravida rutrum. Vivamus gravida, libero id condimentum varius, quam sem luctus lorem, vitae commodo velit odio eu nibh. Integer aliquam odio sit amet libero fermentum venenatis.
-            </p>
-          </div>
-        </section>
-
         {/* Seção: Missão a Oficina */}
-        <section className="py-12 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Nossa Missão</h2>
-            <p className="text-lg text-gray-700">
-              Promover serviços com mão de obra técnica profissional através de conhecimento sólido e dedicação. Procuramos a excelência na prestação de serviços com peças e mão de obra de primeira linha.
+        <section className="p-12 flex items-center justify-center">
+          <div className="inset-0 bg-opacity-50 rounded-lg shadow-lg mb-12"></div>
+          <motion.div
+            className="text-center text-gray-600 bg-gray-50 p-8 rounded-lg shadow-lg"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-3xl font-bold mb-6">Nossa Missão</h2>
+            <p className="text-lg mb-6">
+              Promover serviços com mão de obra técnica profissional através de conhecimento
+              sólido e dedicação. Procuramos a excelência na prestação de serviços com peças e
+              mão de obra de primeira linha.
             </p>
-          </div>
+          </motion.div>
         </section>
 
         <div className='flex items-center justify-center'>

@@ -9,7 +9,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className = "bg-gray-50 p-12 rounded-lg shadow-lg mb-4 mt-4 w-[90%]">
+    <section className = "bg-gray-50 p-12 rounded-lg shadow-lg mb-4 mt-4 w-[93%]">
        <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Nossos Serviços</h2>
        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
          {/* Serviço 1 */}
