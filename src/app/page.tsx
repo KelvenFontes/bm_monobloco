@@ -87,8 +87,9 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        {/* Seção: Nossos Serviços */}
-        <Services />
+        <div className='flex items-center justify-center'>
+          <Services />
+        </div>
 
         <Gallery />
 
