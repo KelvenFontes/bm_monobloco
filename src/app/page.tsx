@@ -36,13 +36,15 @@ const Home: NextPage = () => {
 
     try {
       // Substitua pela sua configuração de envio de e-mail
-      const response = await fetch('/api/send-email', {
+      const response = await fetch('http://localhost:3000/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
       });
+
+      console.log(response);
 
       if (response.ok) {
         setSuccess('Mensagem enviada com sucesso!');
