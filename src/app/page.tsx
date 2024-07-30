@@ -86,25 +86,37 @@ const Home: NextPage = () => {
         </section>
 
 
-        {/* Seção: Vídeo do YouTube */}
+        {/* Seção: Youtube */}
         <section className="py-12 bg-gray-100">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-8">
-              <h2 className="text-4xl font-bold text-gray-900">Veja Nosso Trabalho</h2>
-              <p className="mt-4 text-xl text-gray-700">Confira um vídeo da nossa oficina realizando serviços de solda.</p>
-            </div>
-            <div className="relative w-full h-80 md:h-[calc(100vh/1.5)] rounded-lg overflow-hidden shadow-lg">
-              <iframe
-                className="absolute inset-0 w-full h-full"
-                src="https://youtu.be/I3trLTCJ1lU?si=uf13pO2T1ByPsko7" // Substitua SEU_VIDEO_ID pelo ID do vídeo do YouTube
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                title="Vídeo de Solda"
-              ></iframe>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Veja Nosso Trabalho em Ação</h2>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+              <div className="flex-1">
+                <h3 className="text-2xl font-semibold mb-4 text-gray-700">Soldagem Profissional</h3>
+                <p className="text-lg text-gray-700 mb-4">
+                  Assista ao vídeo para ver como nossa equipe realiza soldagem com precisão e qualidade.
+                  Utilizamos equipamentos de ponta e técnicas avançadas para garantir a máxima durabilidade e
+                  segurança em todos os nossos serviços de soldagem. Confie na nossa experiência para manter
+                  seu veículo em perfeitas condições.
+                </p>
+              </div>
+              <div className="md:w-1/2">
+                <div className="relative w-full h-0" style={{ paddingTop: '90%' }}>
+                  <iframe
+                    src="https://www.youtube.com/embed/VIDEO_ID"
+                    frameBorder="0"
+                    allowFullScreen
+                    className="absolute top-0 left-0 w-full h-full rounded-lg"
+                    title="Vídeo de Solda"
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
         </section>
+
+
+
 
 
 
