@@ -13,7 +13,7 @@ import Gallery from './components/Gallery'
 
 
 
-import { FaGoogle, FaMapMarkerAlt, FaWaze } from 'react-icons/fa';
+import { FaGoogle, FaWaze } from 'react-icons/fa';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 
 const Home: NextPage = () => {
@@ -84,6 +84,29 @@ const Home: NextPage = () => {
             </p>
           </motion.div>
         </section>
+
+
+        {/* Seção: Vídeo do YouTube */}
+        <section className="py-12 bg-gray-100">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-8">
+              <h2 className="text-4xl font-bold text-gray-900">Veja Nosso Trabalho</h2>
+              <p className="mt-4 text-xl text-gray-700">Confira um vídeo da nossa oficina realizando serviços de solda.</p>
+            </div>
+            <div className="relative w-full h-80 md:h-[calc(100vh/1.5)] rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://youtu.be/I3trLTCJ1lU?si=uf13pO2T1ByPsko7" // Substitua SEU_VIDEO_ID pelo ID do vídeo do YouTube
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                title="Vídeo de Solda"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+
+
 
         <div className='flex items-center justify-center'>
           <Services />
