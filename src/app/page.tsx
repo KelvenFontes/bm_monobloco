@@ -94,7 +94,7 @@ const Home: NextPage = () => {
 
 
         {/* Seção: Formulário de Contato */}
-        <section className="py-12 bg-gray-100">
+        <section className="py-12 bg-gray-100" id='contact'>
           <div className="container mx-auto px-4">
             <div className="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Entre em Contato Conosco</h2>
