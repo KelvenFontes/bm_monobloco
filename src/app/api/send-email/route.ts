@@ -20,8 +20,8 @@ const transporter = nodemailer.createTransport({
 // Envia o e-mail
 transporter.sendMail({
   from: 'kelven.fontes@blindjobs.com.br',
-  to: 'destinatario@example.com', // Substitua pelo endereço do destinatário
-  subject: 'Teste de Envio de E-mail com Zoho Mail',
+  to: 'kelvenbentofontes@gmail.com', // Substitua pelo endereço do destinatário
+  subject: 'esse é seu email kelvinho',
   text: 'Este é um teste de envio de e-mail usando o Zoho Mail.',
   html: '<p>Este é um teste de envio de e-mail usando o Zoho Mail.</p>',
 }, (error, info) => {
