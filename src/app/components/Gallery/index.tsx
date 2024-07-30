@@ -111,18 +111,18 @@ const Gallery: React.FC = () => {
                 <FaTimes />
               </button>
               <button
-                className="absolute left-[-80px] md:left-[-100px] top-1/2 transform -translate-y-1/2 text-white text-3xl px-4 py-2 rounded-lg z-10 m-2"
+                className="absolute left-[-60px] md:left-[-100px] top-1/2 transform -translate-y-1/2 text-white text-3xl px-4 py-2 rounded-lg z-10 m-2"
                 onClick={handlePrev}
               >
                 <FaChevronLeft />
               </button>
               <button
-                className="absolute right-[-80px] md:right-[-100px] top-1/2 transform -translate-y-1/2 text-white text-3xl px-4 py-2 rounded-lg z-10 m-2"
+                className="absolute right-[-60px] md:right-[-100px] top-1/2 transform -translate-y-1/2 text-white text-3xl px-4 py-2 rounded-lg z-10 m-2"
                 onClick={handleNext}
               >
                 <FaChevronRight />
               </button>
-              <div className="relative w-[200px] h-[300px] md:w-[600px] md:h-[600px]">
+              <div className="relative w-[250px] h-[350px] md:w-[600px] md:h-[600px]">
                 <Image src={selectedImage} alt="Imagem Ampliada" layout="fill" objectFit="contain" />
               </div>
             </div>
