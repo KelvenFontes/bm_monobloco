@@ -14,8 +14,8 @@ const Header = () => {
           <Link href="/sobre" className="hover:underline">
             Sobre
           </Link>
-          <a href="#services" className="hover:underline">Serviços</a>
-          <a href="#contact" className="hover:underline">Contato</a>
+          <a href="/#services" className="hover:underline">Serviços</a>
+          <a href="/contato" className="hover:underline">Contato</a>
         </nav>
       </div>
     </header>
