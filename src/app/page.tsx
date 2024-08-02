@@ -49,7 +49,7 @@ const Home: NextPage = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1 }}
                 >
-                  Bm monobloco
+                  Bm Monobloco
                 </motion.h1>
                 <motion.p
                   className="mt-4 text-xl text-gray-700"

@@ -38,7 +38,7 @@ export async function POST(request: Request) {
 Nome: ${name}
 E-mail: ${contactByEmail ? email : 'Não informado'}
 Telefone: ${contactByPhone ? phone : 'Não informado'} ${useWhatsApp ? '(WhatsApp)' : ''}
-Método de Contato Preferido: ${contactByEmail ? 'Email' : ''} ${contactByPhone ? 'Telefone' : ''}
+Método de Contato Preferido: ${contactByEmail ? 'Email' : ''} ${contactByEmail && contactByPhone ? 'ou' : ''} ${contactByPhone ? 'Telefone' : ''}
 
 Mensagem:
 ${message}`,
@@ -68,7 +68,7 @@ ${message}`,
       <p><strong>Nome:</strong> ${name}</p>
       <p><strong>E-mail:</strong> ${contactByEmail ? email : 'Não informado'}</p>
       <p><strong>Telefone:</strong> ${contactByPhone ? phoneDisplay : 'Não informado'}</p>
-      <p><strong>Método de Contato Preferido:</strong> ${contactByEmail ? 'Email' : ''} ${contactByPhone ? 'Telefone' : ''}</p>
+      <p><strong>Método de Contato Preferido:</strong> ${contactByEmail ? 'Email' : ''} ${contactByEmail && contactByPhone ? 'ou' : ''} ${contactByPhone ? 'Telefone' : ''}</p>
     </div>
     <p><strong>Mensagem:</strong><br>${message}</p>
     <div class="footer">
