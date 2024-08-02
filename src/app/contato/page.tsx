@@ -8,16 +8,16 @@ import SendEmail from "../components/SendEmail";
 
 const ContactPage = () => {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 min-h-screen">
       <Header />
 
       <main className="container mx-auto px-4 py-12">
-        <h1 className="text-5xl font-extrabold text-gray-900 mb-12 text-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+        <h1 className="text-5xl font-extrabold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-gray-800 to-gray-400">
           Entre em Contato
         </h1>
 
         {/* Informações de Perfil */}
-        <section className="bg-white p-10 rounded-lg shadow-lg mb-12 transform transition-transform hover:scale-105 hover:shadow-2xl">
+        <section className="bg-white p-8 rounded-lg shadow-lg mb-12 transform transition-transform hover:scale-101 hover:shadow-2xl hover:shadow-blue-500/50">
           <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b-4 border-blue-500 pb-2">
             Informações de Perfil
           </h2>
@@ -26,32 +26,32 @@ const ContactPage = () => {
           </p>
           <div className="flex flex-col md:flex-row md:space-x-6">
             {/* Telefone */}
-            <div className="flex items-center mb-6 md:mb-0 p-4 bg-gray-100 rounded-lg shadow-md transform transition-transform hover:scale-105 hover:bg-gray-200">
+            <div className="flex items-center mb-6 md:mb-0 p-4 bg-gray-100 rounded-lg shadow-md transform transition-transform hover:scale-105 hover:bg-gray-200 hover:shadow-blue-500/50">
               <FaPhoneAlt className="text-blue-600 text-3xl mr-4" />
               <p className="text-gray-700 text-lg">
-                <a href="tel:+551136827122">+55 (11) 3682-7122</a>
+                <a href="tel:+551136827122" className="hover:text-blue-600 transition-colors duration-300">+55 (11) 3682-7122</a>
               </p>
             </div>
 
             {/* E-mail */}
-            <div className="flex items-center p-4 bg-gray-100 rounded-lg shadow-md transform transition-transform hover:scale-105 hover:bg-gray-200">
+            <div className="flex items-center p-4 bg-gray-100 rounded-lg shadow-md transform transition-transform hover:scale-105 hover:bg-gray-200 hover:shadow-blue-500/50">
               <FaEnvelope className="text-blue-600 text-3xl mr-4" />
               <p className="text-gray-700 text-lg">
-                <a href="mailto:contato@bmmonobloco.com.br">contato@bmmonobloco.com.br</a>
+                <a href="mailto:contato@bmmonobloco.com.br" className="hover:text-blue-600 transition-colors duration-300">contato@bmmonobloco.com.br</a>
               </p>
             </div>
           </div>
-          <div className="flex space-x-4 mt-6">
-            <a href="https://www.instagram.com/bm_monobloco/" target="_blank" rel="noopener noreferrer">
+          <div className="flex space-x-4 mt-6 justify-center">
+            <a href="https://www.instagram.com/bm_monobloco/" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110">
               <FaInstagram size="2em" className="text-gray-400 hover:text-gray-300 transition-colors duration-300" />
             </a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110">
               <FaYoutube size="2em" className="text-gray-400 hover:text-gray-300 transition-colors duration-300" />
             </a>
-            <a href="https://api.whatsapp.com/send?phone=5511945420139&text=Ola%2C+Somos+a+Bm+Monobloco.%0AAssim+que+poss%C3%ADvel+retornaremos+a+sua+mensagem" target="_blank" rel="noopener noreferrer">
+            <a href="https://api.whatsapp.com/send?phone=5511945420139&text=Ola%2C+Somos+a+Bm+Monobloco.%0AAssim+que+poss%C3%ADvel+retornaremos+a+sua+mensagem" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110">
               <FaWhatsapp size="2em" className="text-gray-400 hover:text-gray-300 transition-colors duration-300" />
             </a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110">
               <FaFacebook size="2em" className="text-gray-400 hover:text-gray-300 transition-colors duration-300" />
             </a>
           </div>
