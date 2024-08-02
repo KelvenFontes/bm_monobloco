@@ -27,7 +27,7 @@ export async function POST(request: Request) {
 
     let phoneDisplay = phone || 'Não informado';
     if (useWhatsApp && phone) {
-      phoneDisplay = `<span>${phone} <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; height: 20px; vertical-align: middle;" /></span>`;
+      phoneDisplay = `<span>${phone} <img src="https://bm-monobloco.vercel.app/whatsappicon.png" alt="WhatsApp" style="width: 20px; height: 20px; vertical-align: middle;" /></span>`;
     }
 
     const adminMailOptions = {
