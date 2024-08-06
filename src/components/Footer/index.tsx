@@ -1,6 +1,6 @@
 import { FaInstagram, FaYoutube, FaWhatsapp, FaFacebook, FaPhoneAlt, FaLocationArrow, FaEnvelope } from 'react-icons/fa'
 import { IoMdTime } from 'react-icons/io'
-import { FaCcVisa, FaCcMastercard  } from 'react-icons/fa';
+import { FaCcVisa, FaCcMastercard } from 'react-icons/fa';
 import { FaMoneyBill1Wave } from "react-icons/fa6";
 
 import { FaPix } from "react-icons/fa6";
@@ -66,6 +66,14 @@ const Footer = () => {
                 className="hover:text-gray-300 transition-colors duration-300"
               >
                 (11) 3682-7122
+              </a>
+            </p>
+            <p className='text-gray-400'>
+              <a href="https://api.whatsapp.com/send?phone=5511945420139&text=Ola%2C+Somos+a+Bm+Monobloco.%0AAssim+que+poss%C3%ADvel+retornaremos+a+sua+mensagem" target="_blank" rel="noopener noreferrer">
+                <div className='flex gap-2 pt-1'>
+                  (11) 94542-0139
+                  <FaWhatsapp size="1.5em" className="text-gray-400 hover:text-gray-300 transition-colors duration-300 pb-1" />
+                </div>
               </a>
             </p>
             <h3 className="text-xl font-semibold mt-4 mb-2"><FaEnvelope className="inline mr-2" />Email</h3>
